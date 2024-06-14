@@ -1,0 +1,397 @@
+
+#pariwisata{
+  background-color: #033D44;
+}
+
+#pariwisata .container-fluid{
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#pariwisata h1{
+  color: #033D44;
+}
+
+.pariwisata-img img {
+  height: 450px;
+}
+.pariwisata-box a .pariwisata-content {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pariwisata-box a .pariwisata-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #033D44;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pariwisata-box a .overlay-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  background-color: rgba(247, 247, 247, 0.53);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 20px 0 16px 0;
+}
+
+
+.pariwisata-box a:hover .pariwisata-overlay {
+  opacity: 0.7;
+}
+
+.pariwisata-box a:hover .overlay-content {
+  position: absolute;
+  bottom: 0px;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-content h5 {
+    margin-bottom: 10px; /* Menambahkan margin agar ada jarak antara teks dan button */
+  }
+
+  
+  
+  .overlay-content button span{
+   height: 20px;
+   width: auto;
+   font-size: 14px;
+  }
+
+  .pariwisata-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* Adjust as needed */
+  }
+  
+  .pariwisata-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .pariwisata-img img {
+    height: 250px;
+    border-radius: 5px 5px 0 0; /* Rounded corners at the top of the image */
+  }
+  
+  .pariwisata-content {
+    border-radius: 0 0 5px 5px; /* Rounded corners at the bottom of the content */
+  }
+
+
+  /* slider penginapan */
+
+
+  .slider-penginapan {
+    /* max-width: 1100px; */
+    /* padding: 25px 210px 50px 180px;  */
+    padding: 180px 80px 80px 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Add this */
+    align-items: center;
+  }
+
+.slider-penginapan  h1 {
+  text-align: center; /* Add this */
+  margin-bottom: 80px;
+}
+
+
+
+/* Rest of your CSS code... */
+.penginapan-wrapper {
+  display: flex;
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+  /* Rest of your CSS code... */
+}
+.penginapan-wrapper i {
+  height: 50px;
+  width: 50px;
+  background: #D8EE7B;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 9999;
+}
+
+.penginapan-wrapper i:first-child {
+  left: 10px;
+}
+
+.penginapan-wrapper i:last-child {
+  right: 10px;
+}
+
+.penginapan-wrapper .penginapan-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  justify-content: space-around;
+  /* padding-top: 60px; Add padding to avoid overlapping with arrows */
+}
+.penginapan-carousel {
+  display: flex;
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+  /* Rest of your CSS code... */
+}
+.penginapan-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.penginapan-carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.penginapan-carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.penginapan-carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.penginapan-carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+
+.card .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 4px solid #fff; */
+}
+
+.card span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .penginapan-wrapper .penginapan-carousel {
+    /* grid-auto-columns: calc((100% / 2) - 9px); */
+    grid-auto-columns: 100%;
+  }
+
+  .penginapan-wrapper i:first-child, .penginapan-wrapper i:last-child {
+    display: inline-block; /* Hide arrows on smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .penginapan-wrapper .penginapan-carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+.rounded-button {
+  border-radius: 10px;
+}
+
+.more-button span {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.more-button svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.penginapan ul {
+  display: flex; /* Add this */
+  flex-direction: row; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 10px 20px;  
+  }
+
+  .penginapan-img img {
+    width: 100%; /* Mengubah lebar gambar menjadi 100% dari kontainer induknya */
+    height: 300px; /* Menjaga aspek rasio gambar */
+    border-radius: 5px 5px 0 0; /* Rounded corners at the top of the image */
+  }
+
+/* Rest of your CSS code... */
+
+/* slider kelompok */
+.slider-kelompok {
+  background-color: #033D44; /* You can change this to any shade of green you like */
+}
+
+.container-kelompok {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-kelompok h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
+}
+
+.card-gridh{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+
+.card-client {
+  background: #e00000;
+  width: 23rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 10px #212121;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 0px;
+  margin: 40px;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 18rem;
+  height:18rem;
+  border: 4px solid #fff;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #fff;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
