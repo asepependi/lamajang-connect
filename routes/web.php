@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+// dashboard 
+Route::get('/dashboard', function(){
+    return view('dashboard.index');
+});
+
+// dashboard budaya
+Route::get('/dashboard/budaya', function(){
+    return view('dashboard.budaya');
+});
+
+// dashboard pariwisata
+Route::get('/dashboard/pariwisata', function(){
+    return view('dashboard.pariwisata');
+});
+
+// dashboard penginapan
+Route::get('/dashboard/penginapan', function(){
+    return view('dashboard.penginapan');
+});
+
+
