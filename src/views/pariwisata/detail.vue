@@ -2,7 +2,7 @@
   <Topbar />
   <section class="section " id="detail" >
     <div class="bg-overlay"></div>
-    <div class="container-fluid" style="padding-top: 70px;">
+    <div class="container-fluid" style="padding-top: 150px;">
         <div class="row align-items-center justify-content-center pt-5 pb-5" style="background-color: #033D44;">
             <div class="col-lg-5">
                 <div class="detail-img">

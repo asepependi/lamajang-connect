@@ -48,7 +48,6 @@ p {
 
 .section {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -742,8 +741,9 @@ p {
     margin-bottom: 0px;
     color: #F5F5F5;
   }
-  .bg-home {
-    padding-top: 140px;
+  .home-img {
+    border-radius: 20px;
+    background-color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

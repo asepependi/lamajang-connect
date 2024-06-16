@@ -1,6 +1,6 @@
 <template>
   <Topbar />
-  <section class="section" id="penginapan">
+  <section class="section" id="penginapan" style="padding-top: 150px;">
             <div class="search-container row justify-content-center mb-4">
                 <input type="text" id="search" placeholder="Cari sesuatu...">
                 <button type="button" id="search-button" >Cari</button>
@@ -21,11 +21,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>
@@ -41,11 +37,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>
@@ -62,11 +54,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>
@@ -82,11 +70,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>
@@ -102,11 +86,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>
@@ -121,11 +101,7 @@
                                     <div class="penginapan-img">
                                         <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                                     </div>
-                                    <!-- <div class="penginapan-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-black"></i>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="overlay-content">
                                         <h5 class="font-16 m-0">Home Stay</h5>
                                     </div>

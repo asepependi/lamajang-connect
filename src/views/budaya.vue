@@ -3,7 +3,7 @@
   <section class="section " id="budaya" >
     <div class="bg-overlay"></div>
     
-    <div class="container-fluid" style="padding-top: 40px;">
+    <div class="container-fluid" style="padding-top: 150px;">
         <div class="row justify-content-center">
             <div class="col-lg-5">
                 <div class="title text-center mb-5">

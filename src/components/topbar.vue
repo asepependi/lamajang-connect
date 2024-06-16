@@ -2,8 +2,8 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" style="background-color: #033D44;">
     <div class="container-fluid">
       <router-link :to="{name: 'home'}" class="logo text-uppercase">
-        <img :src="'images/Logo.png'" alt="" class="logo-light" height="60" />
-        <img :src="'images/Logo.png'" alt="" class="logo-dark" height="60" />
+        <img src="/public/images/Logo.png" alt="" class="logo-light" height="60" />
+        <img src="/public/images/Logo.png" alt="" class="logo-dark" height="60" />
       </router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

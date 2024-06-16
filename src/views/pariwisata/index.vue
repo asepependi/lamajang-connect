@@ -1,6 +1,6 @@
 <template>
   <Topbar />
-  <section class="section" id="pariwisata">
+  <section class="section" id="pariwisata" style="padding-top: 150px;">
     <div class="search-container row justify-content-center mb-4">
       <input type="text" id="search" placeholder="Cari sesuatu...">
       <button type="button" id="search-button">Cari</button>
@@ -22,11 +22,6 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>
@@ -43,11 +38,7 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
+                
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>
@@ -64,11 +55,7 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
+                
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>
@@ -84,11 +71,7 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
+                
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>
@@ -104,11 +87,7 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
+                
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>
@@ -123,11 +102,7 @@
                 <div class="pariwisata-img">
                   <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
-                <!-- <div class="pariwisata-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div> -->
+                
                 <div class="overlay-content">
                   <h5 class="font-16 m-0">Kebun Teh</h5>
                 </div>

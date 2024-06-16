@@ -1,7 +1,7 @@
 <template>
   <section class="section pb-lg-0 pb-0" id="contact">
     <div class="overlay-container">
-      <img :src="'images/bg-cover 2.png'" alt="" class="full-width-image">
+      <img src="/public/images/bg-cover 2.png" alt="" class="">
       <div class="overlay-background"></div>
       <div class="overlay-text">
         <h1 class="mb-4">Lamajang Connect</h1>
@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="mb-3">
-            <img :src="'images/Logo.png'" alt="" height="100">
+            <img :src="'../images/Logo.png'" alt="" height="100">
           </div>
           <p>Lamajang Connect adalah solusi yang inovatif dan berkelanjutan untuk mempromosikan budaya dan warisan
             tradisional Desa Lamajang.</p>
@@ -50,7 +50,7 @@
             <p class="text-black mb-3">Hubungi Kami</p>
             <ul class="list-unstyled footer-list">
               <li><a href="#">0888-7777-6666</a></li>
-              <li><a href="#">sample@gmail.com</a></li>
+              <li><a href="#">lamajangconnect@gmail.com</a></li>
               <li><a href="#">
                   Jl. Dr. Setiabudi No.193, Gegerkalong, Kec. Sukasari,
                   Kota Bandung, Jawa Barat 40153
