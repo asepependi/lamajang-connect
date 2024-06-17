@@ -19,14 +19,14 @@ return new class extends Migration
             $table->string('jam_masuk_keluar');
             $table->text('deskripsi');
             $table->string('foto')->nullable();
-            $table->decimal('harga', 8, 2);
+            $table->decimal('harga', 64, 2);
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
-     * 
+     *
      */
     public function down(): void
     {

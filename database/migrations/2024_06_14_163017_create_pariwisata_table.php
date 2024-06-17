@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('jam_buka');
             $table->text('deskripsi');
             $table->string('foto')->nullable();
-            $table->decimal('harga', 8, 2);
+            $table->decimal('harga', 64, 2);
             $table->timestamps();
         });
     }
