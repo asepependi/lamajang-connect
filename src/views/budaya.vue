@@ -11,25 +11,22 @@
                 </div>
             </div>
             <div class="row align-items-center justify-content-center"
-                style="background-color: rgba(245, 245, 245, 0.9);">
+                style="background-color: rgba(245, 245, 245, 0.9);" v-for="item in listData.data" :key="item">
                 <div class="col-lg-5">
                     <div class="budaya-img">
-                        <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block">
+                        <img :src="item.foto" alt="" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="mt-5 mt-lg-0">
-                        <h2 class="mb-3">Kesenian</h2>
-                        <p style="font-weight: 500;color: #033D44;">Lamajang Connect adalah solusi yang inovatif dan
-                            berkelanjutan untuk mempromosikan budaya dan warisan tradisional Desa Lamajang. Dengan
-                            aplikasi ini, kami bertujuan untuk membangun jembatan antara tradisi dan teknologi, serta
-                            antara komunitas lokal dan wisatawan, demi melestarikan warisan budaya yang berharga serta
-                            meningkatkan kesejahteraan masyarakat desa.
+                        <h2 class="mb-3">{{item.nama}}</h2>
+                        <p style="font-weight: 500;color: #033D44;">
+                            {{item.deskripsi}}
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center pt-5 mt-5"
+            <!-- <div class="row align-items-center justify-content-center pt-5 mt-5"
                 style="background-color: rgba(245, 245, 245, 0.9);">
                 <div class="col-lg-5">
                     <div>
@@ -64,7 +61,7 @@
                             meningkatkan kesejahteraan masyarakat desa.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- row end -->
         </div>
         <!-- container-fluid end -->

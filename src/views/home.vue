@@ -41,8 +41,8 @@
   <!-- section tengah start -->
   <section>
     <div class="container-fluid" style="padding-top: 50px; padding-bottom: 40px;">
-        <template v-for="item in budaya.data" :key="item">
-          <div class="row align-items-center justify-content-center" style="background-color: rgba(245, 245, 245, 0.9);" v-if="item.position === 'kiri'">
+        <template v-for="item in listBudaya.data" :key="item">
+          <div class="row align-items-center justify-content-center" style="background-color: rgba(245, 245, 245, 0.9);">
               <div class="col-lg-5">
                   <div class="budaya-img">
                       <img :src="item.foto" alt="" class="img-fluid mx-auto d-block">
@@ -50,17 +50,19 @@
               </div>
               <div class="col-lg-5 offset-lg-1">
                   <div class="mt-5 mt-lg-0">
-                      <h1 class="mb-3">Lamajang Connect</h1>
-                      <p style="font-weight: 500;color: #033D44;">Lamajang Connect adalah solusi yang inovatif dan berkelanjutan untuk mempromosikan budaya dan warisan tradisional Desa Lamajang. Dengan aplikasi ini, kami bertujuan untuk membangun jembatan antara tradisi dan teknologi, serta antara komunitas lokal dan wisatawan, demi melestarikan warisan budaya yang berharga serta meningkatkan kesejahteraan masyarakat desa.</p>
+                      <h1 class="mb-3">{{item.nama}}</h1>
+                      <p style="font-weight: 500;color: #033D44;">
+                        {{item.deskripsi}}
+                      </p>
                       <a :href="'/budaya'">
-                        <button class="btn btn-sm mr-3" style="background-color: #D8EE7B; color: #033D44;">
+                        <button class="btn btn-sm mr-3 mb-2" style="background-color: #D8EE7B; color: #033D44;">
                           LIHAT SELENGKAPNYA
                         </button>
                     </a>
                   </div>
               </div>
           </div>
-          <div class="row align-items-center justify-content-center pt-5 mt-5" style="background-color: rgba(245, 245, 245, 0.9);" v-if="item.position === 'kanan'">
+          <!-- <div class="row align-items-center justify-content-center pt-5 mt-5" style="background-color: rgba(245, 245, 245, 0.9);">
               <div class="col-lg-5">
                   <div>
                       <h1 class="mb-3">Budaya di Desa Wisata Lamajang</h1>
@@ -78,7 +80,7 @@
                       <img :src="item.foto" alt="" class="img-fluid mx-auto d-block">
                   </div>
               </div>
-          </div>
+          </div> -->
         </template>
         <!-- row end -->
     </div>
@@ -327,7 +329,7 @@
     },
     data(){
       return{
-        budaya: {},
+        listBudaya: {},
         pariwisata: {},
         penginapan: {}
       }
@@ -336,7 +338,7 @@
       dataBudaya(){
         Home.budaya().then((res) => {
           if (res.data.status) {
-            this.budaya = res.data.data
+            this.listBudaya = res.data.data
           }
         })
       },
