@@ -11,9 +11,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="sweetalert2/sweetalert2.min.css" type="text/css">
     <!-- Custom  sCss -->
-    {{-- <link rel="stylesheet" type="text/css" href="css/style.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <script src="sweetalert2/sweetalert2.min.js"></script>
-    @vite(['resources/css/bootstrap.min.css','resources/css/style.css'])
 </head>
 <body>
     <div class="LoginV1">
