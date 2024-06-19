@@ -14,112 +14,29 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" v-for="item in listData.data" :key="item">
           <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-            <router-link :to="{name: 'pariwisata-detail', params:{id:'2'}}">
+            <router-link :to="{name: 'pariwisata-detail', params:{id:item.id}}" class="text-dark">
               <div class="position-relative pariwisata-content">
                 <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
+                  <img :src="item.foto" alt="" class="img-fluid mx-auto d-block rounded">
                 </div>
                 <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
+                  <h5 class="font-16 m-0">{{item.nama}}</h5>
                 </div>
               </div>
             </router-link>
-            </a>
-          </div>
-
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-              <div class="position-relative pariwisata-content">
-                <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
-                </div>
-                
-                <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-              <div class="position-relative pariwisata-content">
-                <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
-                </div>
-                
-                <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-              <div class="position-relative pariwisata-content">
-                <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
-                </div>
-                
-                <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-              <div class="position-relative pariwisata-content">
-                <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
-                </div>
-                
-                <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pariwisata-box text-center card ">
-            <a href="#" class="text-dark">
-              <div class="position-relative pariwisata-content">
-                <div class="pariwisata-img">
-                  <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
-                </div>
-                
-                <div class="overlay-content">
-                  <h5 class="font-16 m-0">Kebun Teh</h5>
-                </div>
-              </div>
-            </a>
           </div>
         </div>
       </div>
       <!-- row end -->
-
-
     </div>
     <!-- container-fluid end -->
   </section>
   <Footer />
 </template>
 <script>
+  import MasterData from '@/services/MasterData.service';
   import Topbar from '@/components/topbar.vue';
   import Footer from '@/components/footer.vue';
   export default {
@@ -128,5 +45,22 @@
       Topbar,
       Footer
     },
+    data(){
+      return {
+        listData: {}
+      }
+    },
+    methods: {
+      getData(page=1){
+        MasterData.pariwisata(
+          `?page=${page}`
+        ).then((res) => {
+          this.listData = res.data.data
+        })
+      }
+    },
+    mounted(){
+      this.getData()
+    }
   }
 </script>

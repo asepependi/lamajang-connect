@@ -32,17 +32,20 @@
             </router-link>
           </li>
         </ul>
-        <router-link :to="{name: 'login'}">
-          <button class="btn btn-sm btn-rounded navbar-btn" style="background-color: #D8EE7B; color: #033D44; ">
-            Masuk
-          </button>
-        </router-link>
+        <a :href="url_app" class="btn btn-sm btn-rounded navbar-btn" style="background-color: #D8EE7B; color: #033D44; ">
+          Masuk
+        </a>
       </div>
     </div>
   </nav>
 </template>
 <script>
 export default {
-  name: 'topbar'
+  name: 'topbar',
+  data(){
+    return {
+      url_app: import.meta.env.VITE_APP_URL+'login'
+    }
+  }
 }
 </script>

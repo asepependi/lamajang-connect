@@ -43,10 +43,10 @@
                       <a href="#" class="text-dark">
                           <div class="position-relative demo-content">
                               <div class="demo-img">
-                                  <img :src="'images/profile-01.png'" alt="" class="img-fluid mx-auto d-block rounded">
+                                  <img :src="'/images/profile-02.png'" alt="" class="img-fluid mx-auto d-block rounded">
                               </div>
                               <div class="overlay-content">
-                                  <h5 class="font-16 m-0">Moch Riyan Putra Suryadi</h5>
+                                  <h5 class="font-16 m-0">Asep Ependi</h5>
                                   <h6>Project Manager</h6>
                               </div>
                           </div>
@@ -59,7 +59,7 @@
                       <a href="#" class="text-dark">
                           <div class="position-relative demo-content">
                               <div class="demo-img">
-                                  <img :src="'images/profile-01.png'" alt="" class="img-fluid mx-auto d-block rounded">
+                                  <img :src="'/images/profile-03.png'" alt="" class="img-fluid mx-auto d-block rounded">
                               </div>
                               <div class="overlay-content">
                                   <h5 class="font-16 m-0">Moch Riyan Putra Suryadi</h5>
