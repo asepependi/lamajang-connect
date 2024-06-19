@@ -45,7 +45,7 @@
           <div class="row align-items-center justify-content-center" style="background-color: rgba(245, 245, 245, 0.9);" v-if="item.position === 'kiri'">
               <div class="col-lg-5">
                   <div class="budaya-img">
-                      <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block">
+                      <img :src="item.foto" alt="" class="img-fluid mx-auto d-block">
                   </div>
               </div>
               <div class="col-lg-5 offset-lg-1">
