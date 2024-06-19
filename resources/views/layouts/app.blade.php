@@ -48,6 +48,7 @@
     <script src="{{ asset('datatables/dataTables.bootstrap.min.js') }}"></script>
     {{-- Mask Money --}}
     <script src="{{ asset('js/jquery.maskMoney.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/sb-admin-2.min.js') }}" type="text/javascript"></script>
     <script>
         @if (Session::has('success'))
             swal({
@@ -72,7 +73,7 @@
             });
         @endif
     </script>
-    
+
     @yield('script')
 </body>
 </html>
