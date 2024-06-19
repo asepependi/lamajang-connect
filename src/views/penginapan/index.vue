@@ -1,10 +1,10 @@
 <template>
     <Topbar />
     <section class="section" id="penginapan" style="padding-top: 150px;">
-        <div class="search-container row justify-content-center mb-4">
+        <!-- <div class="search-container row justify-content-center mb-4">
             <input type="text" id="search" placeholder="Cari sesuatu..." autocomplete="off">
             <button type="button" id="search-button" >Cari</button>
-        </div>
+        </div> -->
         <div class="container-fluid ">
             <div class="row justify-content-center">
                 <div class="col-lg-5">

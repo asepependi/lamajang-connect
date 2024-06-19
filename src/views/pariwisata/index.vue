@@ -1,10 +1,10 @@
 <template>
   <Topbar />
   <section class="section" id="pariwisata" style="padding-top: 150px;">
-    <div class="search-container row justify-content-center mb-4">
+    <!-- <div class="search-container row justify-content-center mb-4">
       <input type="text" id="search" placeholder="Cari sesuatu...">
       <button type="button" id="search-button">Cari</button>
-    </div>
+    </div> -->
     <div class="container-fluid bg-white">
       <div class="row justify-content-center">
         <div class="col-lg-5">
