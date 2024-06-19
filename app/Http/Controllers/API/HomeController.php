@@ -14,6 +14,9 @@ class HomeController extends Controller
         $status = false;
         try {
             $data = Budaya::select('id','nama','foto','deskripsi')->paginate(2);
+            foreach ($data as $item) {
+                $item->foto = storage_path("app/public/budaya/{$item->foto}");
+            }
 
             $status = true;
             $response = [
