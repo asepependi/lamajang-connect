@@ -75,7 +75,7 @@
               </div>
               <div class="col-lg-5 offset-lg-1">
                   <div class="budaya-img mt-5 mt-lg-0">
-                      <img :src="'images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block">
+                      <img :src="item.foto" alt="" class="img-fluid mx-auto d-block">
                   </div>
               </div>
           </div>
@@ -95,7 +95,7 @@
             <router-link :to="{name: 'pariwisata-detail', params:{id:item.id}}" class="text-dark">
               <div class="position-relative pariwisata-content">
                 <div class="penginapan-img">
-                  <img :src="'https://rakyatbenteng.disway.id/upload/76c9300a2c88e0f798ceccb244e7b4d7.jpg'" alt=""
+                  <img :src="item.foto" alt=""
                     class="img-fluid mx-auto d-block rounded">
                 </div>
                 <div class="pariwisata-overlay"></div>
@@ -143,7 +143,7 @@
             <router-link :to="{name: 'penginapan-detail', params:{id:item.id}}" class="text-dark">
               <div class="position-relative pariwisata-content">
                 <div class="penginapan-img">
-                  <img :src="'https://rakyatbenteng.disway.id/upload/76c9300a2c88e0f798ceccb244e7b4d7.jpg'" alt=""
+                  <img :src="item.foto" alt=""
                     class="img-fluid mx-auto d-block rounded">
                 </div>
                 <div class="pariwisata-overlay"></div>
