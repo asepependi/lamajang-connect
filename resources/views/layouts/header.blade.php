@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="C624-PS052">
 <meta name="description" content="Aplikasi Lamajang Connect">
-<meta name="dicoding:email" content="asepependi142@ubs.ac.id">
+<meta name="dicoding:email" content="asefe019@gmail.com">
 <link rel="icon" href="/img/Logo.png" type="image/x-icon">
 <title>Lamajang Connect</title>
 <meta name="csrf-token" content="{{ csrf_token() }}">
