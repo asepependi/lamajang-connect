@@ -6,7 +6,7 @@
         <div class="row align-items-center justify-content-center pt-5 pb-5" style="background-color: #033D44;">
           <div class="col-lg-5">
             <div class="detail-img">
-              <img :src="'../../images/pariwisata/pariwisata-1.jpg'" alt="" class="img-fluid mx-auto d-block">
+              <img :src="data_detail.foto" alt="" class="img-fluid mx-auto d-block">
             </div>
           </div>
           <div class="col-lg-5 offset-lg-1">

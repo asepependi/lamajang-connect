@@ -19,7 +19,7 @@
                         <router-link :to="{name: 'penginapan-detail', params:{id:item.id}}" class="text-dark">
                             <div class="position-relative penginapan-content">
                                 <div class="penginapan-img">
-                                    <img :src="'images/penginapan/penginapan-1.jpg'" alt="" class="img-fluid mx-auto d-block rounded">
+                                    <img :src="item.foto" alt="" class="img-fluid mx-auto d-block rounded">
                                 </div>
                                 
                                 <div class="overlay-content">
