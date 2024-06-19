@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="LoginV1">
-        <img class="BgCover1" src="images/bg-cover 2.png" alt="Background Cover" />
+        <img class="BgCover1" src="img/bg-cover 2.png" alt="Background Cover" />
         <div class="Rectangle28"></div>
         <div class="Rectangle27"></div>
         <form method="POST" action="{{ route('register.store') }}">

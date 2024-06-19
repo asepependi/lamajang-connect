@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\API\MasterDataController;
+use App\Http\Controllers\API\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('v1')->group(function(){
+    Route::prefix('home')->group(function(){
+        Route::controller(HomeController::class)->group(function(){
+            Route::get('budaya', 'budaya');
+            Route::get('pariwisata', 'pariwisata');
+            Route::get('penginapan', 'penginapan');
+        });
+    });
+    Route::controller(MasterDataController::class)->group(function(){
+        Route::get('budaya', 'budaya');
+        Route::get('pariwisata', 'pariwisata');
+        Route::get('pariwisata/{id}/detail', 'pariwisataDetail');
+        Route::get('penginapan', 'penginapan');
+        Route::get('penginapan/{id}/detail', 'penginapanDetail');
+    });
 });

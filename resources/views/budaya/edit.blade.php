@@ -10,6 +10,14 @@
             <input type="text" class="form-control" id="name" name="name" placeholder="Silahkan Masukkan Nama" required autocomplete="off" value="{{ $budaya->nama }}">
         </div>
         <div class="form-group">
+            <label for="position">Nama</label>
+            <select name="position" id="position" class="form-control">
+                <option value="">Silahkan Pilih Posisi Letak Gambar !</option>
+                <option value="kanan" {{$budaya->position == 'kanan' ? 'selected':''}}>Kanan</option>
+                <option value="kiri" {{$budaya->position == 'kiri' ? 'selected':''}}>Kiri</option>
+            </select>
+        </div>
+        <div class="form-group">
             <label for="photo">Foto <span style="color: red">(Kosongkan jika tidak ingin mengubah foto)</span></label>
             <input type="file" class="form-control-file" id="photo" name="foto">
         </div>

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('foto')->nullable();
             $table->text('deskripsi');
+            $table->enum('position', ['kiri','kanan']);
             $table->timestamps();
         });
     }

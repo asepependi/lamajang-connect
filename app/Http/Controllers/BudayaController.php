@@ -58,17 +58,19 @@ class BudayaController extends Controller
                 $req->all(),
                 [
                     'name' => 'required',
+                    'position' => 'required',
                     'description' => 'required',
                 ],
                 [
                     'name.required' => 'Silahkan Masukkan Nama !',
+                    'position.required' => 'Silahkan Pilih Posisi letak Gambar !',
                     'description.required' => 'Silahkan Masukkan Deskripsi !'
                 ]
             );
 
             if ($validator->fails()) {
                 $messages = $validator->getMessageBag();
-                return redirect()->back()->with($messages->first())->withInput();
+                return redirect()->back()->with('error', $messages->first())->withInput();
             }
 
             DB::commit();
@@ -81,6 +83,7 @@ class BudayaController extends Controller
                 $budaya->foto = $fileName;
             }
             $budaya->deskripsi = $req->description;
+            $budaya->position = $req->position;
             $budaya->save();
 
             return redirect()->route($this->route.'index')->with('success', 'Data berhasil disimpan !');
@@ -106,17 +109,19 @@ class BudayaController extends Controller
                 $req->all(),
                 [
                     'name' => 'required',
+                    'position' => 'required',
                     'description' => 'required',
                 ],
                 [
                     'name.required' => 'Silahkan Masukkan Nama !',
+                    'position.required' => 'Silahkan Pilih Posisi letak Gambar !',
                     'description.required' => 'Silahkan Masukkan Deskripsi !'
                 ]
             );
 
             if ($validator->fails()) {
                 $messages = $validator->getMessageBag();
-                return redirect()->back()->with($messages->first())->withInput();
+                return redirect()->back()->with('error', $messages->first())->withInput();
             }
 
             DB::commit();
@@ -133,6 +138,7 @@ class BudayaController extends Controller
                 $budaya->foto = $fileName;
             }
             $budaya->deskripsi = $req->description;
+            $budaya->position = $req->position;
             $budaya->update();
 
             return redirect()->route($this->route.'index')->with('success', 'Data berhasil diupdate !');

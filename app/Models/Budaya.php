@@ -9,5 +9,5 @@ class Budaya extends Model
 {
     use HasFactory;
     protected $table = 'budaya';
-    protected $fillable = ['nama', 'foto', 'deskripsi'];
+    protected $fillable = ['nama', 'foto', 'deskripsi','position'];
 }

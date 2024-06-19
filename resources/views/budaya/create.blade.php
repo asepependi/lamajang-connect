@@ -10,8 +10,16 @@
             <input type="text" class="form-control" id="name" name="name" placeholder="Silahkan Masukkan Nama" required autocomplete="off">
         </div>
         <div class="form-group">
+            <label for="position">Nama</label>
+            <select name="position" id="position" class="form-control">
+                <option value="">Silahkan Pilih Posisi Letak Gambar !</option>
+                <option value="kanan">Kanan</option>
+                <option value="kiri">Kiri</option>
+            </select>
+        </div>
+        <div class="form-group">
             <label for="photo">Foto</label>
-            <input type="file" class="form-control-file" id="photo" name="photo">
+            <input type="file" class="form-control-file" id="photo" name="foto">
         </div>
         <div class="form-group">
             <label for="description">Deskripsi</label>
