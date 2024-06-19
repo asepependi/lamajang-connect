@@ -23,7 +23,7 @@ class MasterDataController extends Controller
             }
             $dataList = $data->paginate(3);
 
-            foreach ($data as $item) {
+            foreach ($dataList as $item) {
                 $item->foto = asset('storage/budaya/'.$item->foto);
             }
 
