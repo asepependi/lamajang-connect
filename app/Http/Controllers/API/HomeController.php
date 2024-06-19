@@ -15,7 +15,7 @@ class HomeController extends Controller
         try {
             $data = Budaya::select('id','nama','foto','deskripsi')->paginate(2);
             foreach ($data as $item) {
-                $item->foto = \Storage::disk("public/budaya/{$item->foto}");
+                $item->foto = asset('storage/budaya/'.$item->foto);
             }
 
             $status = true;
