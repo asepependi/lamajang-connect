@@ -40,6 +40,9 @@ class HomeController extends Controller
         try {
             $data = Pariwisata::select('id','nama','alamat','jam_buka','deskripsi','foto','harga')
                     ->orderBy('id', 'desc')->paginate(4);
+            foreach ($data as $item) {
+                $item->foto = asset('storage/pariwisata/'.$item->foto);
+            }
 
             $status = true;
             $response = [
@@ -63,6 +66,9 @@ class HomeController extends Controller
         try {
             $data = Penginapan::select('id','nama','alamat','jam_masuk_keluar','deskripsi','foto','harga')
                 ->orderBy('id', 'desc')->paginate(4);
+            foreach ($data as $item) {
+                $item->foto = asset('storage/penginapan/'.$item->foto);
+            }
 
             $status = true;
             $response = [
