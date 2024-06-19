@@ -23,6 +23,10 @@ class MasterDataController extends Controller
             }
             $dataList = $data->paginate(3);
 
+            foreach ($data as $item) {
+                $item->foto = asset('storage/budaya/'.$item->foto);
+            }
+
             $status = true;
             $response = [
                 'status' => $status,
@@ -49,6 +53,10 @@ class MasterDataController extends Controller
             }
             $dataList = $data->paginate(6);
 
+            foreach ($data as $item) {
+                $item->foto = asset('storage/pariwisata/'.$item->foto);
+            }
+
             $status = true;
             $response = [
                 'status' => $status,
@@ -70,6 +78,7 @@ class MasterDataController extends Controller
         $status = false;
         try {
             $data = Pariwisata::find($id);
+            $data->foto = asset('storage/pariwisata/'.$data->foto);
             $data->harga = $this->rupiah($data->harga);
 
             $status = true;
@@ -98,6 +107,10 @@ class MasterDataController extends Controller
             }
             $dataList = $data->paginate(10);
 
+            foreach ($data as $item) {
+                $item->foto = asset('storage/penginapan/'.$item->foto);
+            }
+
             $status = true;
             $response = [
                 'status' => $status,
@@ -119,6 +132,7 @@ class MasterDataController extends Controller
         $status = false;
         try {
             $data = Penginapan::find($id);
+            $data->foto = asset('storage/penginapan/'.$data->foto);
             $data->harga = $this->rupiah($data->harga);
 
             $status = true;
