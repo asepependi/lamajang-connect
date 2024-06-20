@@ -8,12 +8,10 @@
           <div class="hero-text">
             <h1 class="text-white" style="font-size: 40px;">Selamat Datang Di <br> <span style="color: #FCA203;">Lamajang Connect</span> mitra terpercaya Anda dalam menemukan keindahan.</h1>
             <p style="font-size: 20px;">Nikmati Liburan Anda di desa wisata Lamajang</p>
-            <a href="/budaya">
-              <button class="btn btn-sm mr-3" style="background-color: #D8EE7B; color: #033D44;">
+            <a href="#budaya" class="btn btn-sm mr-3" style="background-color: #D8EE7B; color: #033D44;">
                 AYO MULAI
-              </button>
             </a>
-            <a href="/penginapan">
+            <a href="#penginapan">
               <button class="btn btn-sm mr-3" style="background-color: #033D44; border-color: #D8EE7B;">
                 LAYANAN
               </button>
@@ -39,7 +37,7 @@
 
 <!-- home start -->
   <!-- section tengah start -->
-  <section>
+  <section id="budaya" style="padding-top: 30px;">
     <div class="container-fluid" style="padding-top: 50px; padding-bottom: 40px;">
         <template v-for="item in listBudaya.data" :key="item">
           <div class="row align-items-center justify-content-center" style="background-color: rgba(245, 245, 245, 0.9);">
@@ -133,7 +131,7 @@
   <!-- section slider end penginapan -->
 
   <!-- section penginapan -->
-  <section class="slider-penginapan">
+  <section class="slider-penginapan" id="penginapan" style="padding-top: 30px;">
     <div class="container-penginapan">
       <h1>Penginapan</h1>
 
