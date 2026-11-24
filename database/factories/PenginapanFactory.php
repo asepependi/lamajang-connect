@@ -2,29 +2,30 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Penginapan;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Penginapan>
+ * @extends Factory<Penginapan>
  */
 class PenginapanFactory extends Factory
 {
+    protected $model = Penginapan::class;
+
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
-    protected $model = Penginapan::class;
-
-    public function definition()
+    public function definition(): array
     {
         return [
-            'nama' => $this->faker->word,
-            'alamat' => $this->faker->address,
-            'jam_masuk_keluar' => $this->faker->time() . ' - ' . $this->faker->time(),
-            'deskripsi' => $this->faker->paragraph,
-            'foto' => $this->faker->imageUrl(),
-            'harga' => $this->faker->randomFloat(2, 50, 5000),
+            'nama' => fake()->word(),
+            'alamat' => fake()->address(),
+            'jam_masuk_keluar' => fake()->time().' - '.fake()->time(),
+            'deskripsi' => fake()->paragraph(),
+            'foto' => fake()->imageUrl(),
+            'harga' => fake()->randomFloat(2, 50, 5000),
         ];
     }
 }

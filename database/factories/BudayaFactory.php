@@ -2,27 +2,27 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Budaya;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Budaya>
+ * @extends Factory<Budaya>
  */
 class BudayaFactory extends Factory
 {
+    protected $model = Budaya::class;
+
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
-
-     protected $model = Budaya::class;
-
     public function definition(): array
     {
         return [
-            'nama' => $this->faker->word,
-            'foto' => $this->faker->imageUrl(),
-            'deskripsi' => $this->faker->paragraph,
+            'nama' => fake()->word(),
+            'foto' => fake()->imageUrl(),
+            'deskripsi' => fake()->paragraph(),
         ];
     }
 }
